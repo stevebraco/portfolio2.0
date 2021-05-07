@@ -1,0 +1,39 @@
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+    section {
+        padding: 10rem 1.5rem 3rem;
+    }
+
+    .services__list {
+        font-size: 1.2rem;
+    }
+    .services__container {
+        justify-content: space-between;
+    }
+  
+
+    p, .btn {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    section {
+        padding: 10rem .5rem 3rem;
+    }
+}

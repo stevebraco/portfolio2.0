@@ -4,9 +4,10 @@
 body {
   font-family: $fonts;
   background: $black;
-  color: #8a8f98;
+  color: $colorText;
   transition: .5s;
 }
+html, body, main { margin:0; height: 100%;}
 
 .light {
   color: rgb(187, 187, 0);
@@ -14,24 +15,29 @@ body {
 
 .light-mode {
   background: $white;
-  color: #6e6d7a;
+  color: $lightColorText;
+
+  & .profil__text {
+    color: $black;
+  }
 
  
 
   & .heading, & .services__heading, .nav__link {
-    color: #212121;
+    color: $lightColorBlack;
   }
 
-  & p {
-    color: #6e6d7a;
+  & p, & .footer__link {
+
+    color: $lightColorText;
   }
 
 
   & .btn--white {
-    background: #212121;
+    background: $lightColorBlack;
     color: whitesmoke;
     &:hover {
-      background: rgb(63, 3, 214);
+      background: $primary;
     }
   }
 
@@ -41,12 +47,10 @@ body {
 
   & input, & textarea {
     background: lightgray;
-    color: #212121;
+    color: $lightColorBlack;
   }
 
-  & .footer__link {
-    color: #212121;
-  }
+ 
 }
 
 a {
@@ -91,7 +95,7 @@ button {
 
 p {
   font-size: 2rem;
-  color: rgb(175, 173, 173);
+  color: $colorText;
   line-height: 2.6rem;
 }
 
@@ -104,7 +108,7 @@ input, textarea {
   outline-color: rgb(42, 12, 77);
   color: $white;
   border: none;
-  border: 1px solid #585858;
+  border: 1px solid #2e0a5d;
   background: #292929;
   padding: 1.5rem 2rem;
   border-radius: 8px;
@@ -115,6 +119,9 @@ textarea {
   resize: none;
 }
 
+.test {
+  background: red;
+}
 
 
 .container {
@@ -128,8 +135,10 @@ textarea {
   margin-bottom: 2rem;
 }
 .wrapper__intro {
- 
-    justify-content: center;
+ background: url('../img/bg-heading2.png') no-repeat;
+ background-position: top;
+ background-size: contain;
+justify-content: center;
 align-items: center;
 padding-bottom: 7rem;
 }
@@ -144,13 +153,13 @@ padding-bottom: 7rem;
 }
 
 .mail {
-  color: #6e00ff;
+  color: $primary;
 }
 
 .span-langage {
   display: inline-block;
   color: $white;
-  background: rgb(63, 3, 214);
+  background: $primary;
   padding: 0.3rem 0.3rem;
   margin-top: 0.5rem;
   border-radius: 0.2rem;
@@ -158,6 +167,14 @@ padding-bottom: 7rem;
 }
 .ml {
     margin-left: .7rem;
+}
+#strongflash {
+  color: $white;
+    font-size: 1.1rem;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    background: $primary;
 }
 // FLEXBOX
 .dp-flex {
@@ -192,7 +209,7 @@ padding-bottom: 7rem;
     }
   }
   &--purple {
-    background: rgb(63, 3, 214);
+    background: $primary;
     color: $white;
 
     &:hover {
@@ -226,14 +243,14 @@ padding-bottom: 7rem;
     display:inline-block;
     transition: all 250ms ease-in-out;
     &:hover {
-  color: rgba(63, 3, 214, 1);
+  color: $primary;
 
     }
 
     &::after {
       display:block;
   content: '';
-  border-bottom: solid 3px rgba(63, 3, 214, 1);;  
+  border-bottom: solid 2px $primary;;  
   transform: scaleX(0);  
   transition: transform 250ms ease-in-out;
 }
@@ -253,9 +270,18 @@ padding-bottom: 7rem;
     cursor: pointer;
   }
 }
+.background-profil {
+  background: url('../img/Lovepik_com-400234957-fluid-gradient.png') no-repeat;
+  background-size: contain;
+  background-position: bottom center;
 
+}
 //Profile
 .profil {
+  
+  &__text {
+    color: $white;
+  }
   
   &__container {
     max-width: 50rem;
@@ -278,7 +304,6 @@ padding-bottom: 7rem;
         display: flex;
         flex-flow: column;
         flex: 1 1;
-        align-items: center;
 
       }
 
@@ -339,10 +364,14 @@ padding-bottom: 7rem;
 .contact {
   &__error {
     display: inline-block;
-    color: #e74c3c;
-    margin-bottom: .3rem;
+    color: white;
+    border-radius: 1.9px;
+    background: #CA433B;
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
     font-size: 1.2rem;
     visibility: hidden;
+    transition: .3s;
   }
   &__group.error &__error {
     visibility: visible;
@@ -364,7 +393,7 @@ padding-bottom: 7rem;
    padding-right: 1rem;
    transition: all 250ms ease-in-out;
    &:hover {
- color: rgba(63, 3, 214, 1);
+ color: $primary;
 
    }
 

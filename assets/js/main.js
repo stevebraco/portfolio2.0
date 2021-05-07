@@ -23,13 +23,14 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*==================== LIGHT ====================*/
+
 const btnLight = document.querySelector('#btn-light')
 const iconLight = document.querySelector('.light')
 
 btnLight.addEventListener('click', () => {
     document.body.classList.toggle('light-mode')
     const lightOff = iconLight.classList.contains('bx-bulb')
-    const lightOn = iconLight.classList.contains('bxs-bulb')
     console.log(lightOff);
 
      if (iconLight.classList.contains('bx-bulb')) {
@@ -38,7 +39,18 @@ btnLight.addEventListener('click', () => {
          iconLight.classList.replace('bxs-bulb', 'bx-bulb')
      }
 
-    // if (iconLight.classList.contains('bxs-bulb')) {
-    //     iconLight.classList.replace('bxs-bulb', 'bx-bulb')
-    // } 
+   
 })
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    distance: '30px',
+    duration: 1800,
+    reset: false,
+});
+
+sr.reveal(`.profil, .services, .wrapper__intro, .project__card, .contact__form, .footer`, {
+    origin: 'top',
+    interval: 200,
+})
+
