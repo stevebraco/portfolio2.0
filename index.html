@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name= "description" content= "Steve Braco : Développeur Intégrateur Web Je suis à votre disposition pour répondre à tout type de projets : création de sites
+  <meta name="description" content="Steve Braco : Développeur Intégrateur Web Je suis à votre disposition pour répondre à tout type de projets : création de sites
   internet vitrine, e-commerce, application web. 3wacademy, html, javascript, react, redux, PHP, Node, Express" />
-
 
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="favicon.png" />
@@ -27,7 +26,8 @@
         <a class="nav__link" href="#project">projets</a>
         <a class="nav__link" href="#contact">Contact</a>
       </nav>
-      <a href="mailto:sbraco.dev@gmail.com" class="btn btn--white">sbraco.dev@gmail.com</a>
+      <a href="mailto:sbraco.dev@gmail.com" target="_blank" rel="noopener noreferrer" class=" btn
+        btn--white">sbraco.dev@gmail.com</a>
       <div class="nav__light" id="btn-light">
         <i class='light bx bx-bulb'></i>
       </div>
@@ -37,18 +37,16 @@
     </div>
   </header>
   <main>
-    <div class="background-profil">
-      <section class="container profil" id="accueil">
+    <section class="profil" id="accueil">
         <div class="profil__container">
           <div class="wrapper-heading">
             <h1 class="heading">Steve, <span class="span-heading"> Développeur Intégrateur Web.</span></h1>
           </div>
           <p class="profil__text">Je suis à votre disposition pour répondre à tout type de projets : création de sites
             internet vitrine, e-commerce, application web ...</p>
+            <a href="https://www.malt.fr/profile/stevebraco" class="btn btn--purple">Travaillons Ensemble !</a>
         </div>
-        <a href="#" class="btn btn--purple">Travaillons Ensemble !</a>
       </section>
-    </div>
     <div class="bg-linear ">
       <section class="section  services" id="services">
 
@@ -67,7 +65,7 @@
         <div class="services__container container dp-flex">
           <div class="services__listing-container">
             <div class="services__listing">
-              <h3 class="services__heading">Langages</h3>
+              <h3 class="services__heading heading">Langages</h3>
               <ul>
                 <li class="services__list">HTML</li>
                 <li class="services__list">CSS</li>
@@ -76,7 +74,7 @@
               </ul>
             </div>
             <div class="services__listing">
-              <h3 class="services__heading">Framework</h3>
+              <h3 class="services__heading heading">Framework</h3>
               <ul>
                 <li class="services__list">Express.js</li>
                 <li class="services__list">Socket.io</li>
@@ -88,7 +86,7 @@
           </div>
           <div class="services__listing-container">
             <div class="services__listing">
-              <h3 class="services__heading">Library</h3>
+              <h3 class="services__heading heading">Library</h3>
               <ul>
                 <li class="services__list">React</li>
                 <li class="services__list">JQuery</li>
@@ -112,7 +110,7 @@
           </div>
           <div class="services__listing-container">
             <div class="services__listing">
-              <h3 class="services__heading">Outils</h3>
+              <h3 class="services__heading heading">Outils</h3>
               <ul>
                 <li class="services__list">Visual Studio Code</li>
                 <li class="services__list">SASS</li>
@@ -144,7 +142,7 @@
       <div class="project__container container dp-flex">
         <div class=" project__container-card dp-flex column">
           <div class="project__card">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://braco-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <figure>
                 <img class='project__img' src="./assets/img/liberte.jpeg" alt="Collection Liberte">
               </figure>
@@ -229,7 +227,7 @@
       </div>
     </section>
 
-    <section class="contact container " id="contact">
+    <section class="section contact container " id="contact">
       <div class="wrapper__intro dp-flex">
         <div class="wrapper-heading2">
           <h2 class="heading">Me <span class="ml"> Contacter</span></h2>
@@ -237,7 +235,8 @@
         <div class="wrapper-text">
           <p>
             Vous avez une question, un projet, envie d’échanger ou de prendre rendez-vous ?
-            N’hésitez pas à me contacter par mail : <a href="mailto:sbraco.dev@gmail.com" class="mail">sbraco.dev@gmail.com</a> ou remplir le
+            N’hésitez pas à me contacter par mail : <a href="mailto:sbraco.dev@gmail.com"
+              class="mail">sbraco.dev@gmail.com</a> ou remplir le
             formulaire suivant.
 
             Je reviens vers vous rapidement. </p>
@@ -282,7 +281,8 @@
           rel="noopener noreferrer">Instagram</a>
         <a href="https://www.facebook.com/steve.braco" class="footer__link" target="_blank"
           rel="noopener noreferrer">Facebook</a>
-        <a href="#" class="footer__link" target="_blank" rel="noopener noreferrer">Malt</a>
+        <a href="https://www.malt.fr/profile/stevebraco" class="footer__link" target="_blank"
+          rel="noopener noreferrer">Malt</a>
       </div>
       <div>
         <a href="mailto:sbraco.dev@gmail.com" class="footer__link">sbraco.dev@gmail.com</a>
@@ -294,6 +294,8 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <!--========== MAIN JS ==========-->
   <script src="./assets/js/main.js"></script>
+  <!-- XXX FORMVALIDATOR XXX -->
+  <script src="assets/js/formValidator.js"></script>
 </body>
 
 </html>

@@ -49,7 +49,7 @@ const sr = ScrollReveal({
     reset: false,
 });
 
-sr.reveal(`.profil, .services, .wrapper__intro, .project__card, .contact__form, .footer`, {
+sr.reveal(`.profil, .services, .wrapper__intro, .project__card, .services__container, .contact__form, .footer`, {
     origin: 'top',
     interval: 200,
 })
